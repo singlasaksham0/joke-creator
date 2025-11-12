@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Random Joke Generator</title>
+  <link rel="stylesheet" href="joke.css" />
+</head>
+<body>
+  <main class="joke-app" aria-live="polite">
+    <h1 class="title">Random Joke Generator</h1>
+
+    <div id="joke-card" class="joke-card">
+      <div id="joke-text" class="joke-text">Press "Get Joke" to fetch a joke.</div>
+      <div id="joke-meta" class="joke-meta" aria-hidden="true"></div>
+    </div>
+
+    <div class="controls">
+      <button id="get-joke" class="btn primary">Get Joke</button>
+      <button id="copy-joke" class="btn" title="Copy joke to clipboard">Copy</button>
+      <button id="share-joke" class="btn" title="Share joke (if supported)">Share</button>
+    </div>
+
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+  </main>
+
+  <script src="joke.js"></script>
+</body>
+</html>
